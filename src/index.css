@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @keyframes moveInTop {
@@ -27,6 +27,7 @@
   }
 }
 
+
 @layer base {
   /* *{
     margin: 0;
@@ -42,10 +43,13 @@
 
 @theme {
   --font-inter: "Inter";
+  --font-Albert-sans: 'Albert Sans';
+
   --color-midnight-green: #025959;
   --color-rich-black: #013440;
   --color-indian-yellow: #e3a54f;
   --color-bright-gray: #e5f3ec;
+  --color-white: #fff;
   --color-slate-gray: #76888799;
   --color-slate-gray-transparent: rgba(118, 136, 135, 0.8);
 
@@ -55,22 +59,25 @@
 
 @layer components {
   .nav {
-    @apply py-4 px-8 font-medium max-[650px]:px-6;
+    @apply py-4 px-8 font-medium max-[650px]:px-6 fixed z-10 w-full;
     /* font-weight: 500; */
+    li{
+      @apply hover:text-indian-yellow;
+    }
   }
 
   .btn {
-    @apply rounded-xl text-white w-32 py-1.5 px-4 cursor-pointer;
+    @apply rounded-xl text-white w-32 py-2 px-4 cursor-pointer font-medium font-inter;
   }
 
   .mobile-menu {
     @media (width <= 639px) {
       position: absolute;
-      /* color: #fff; */
       right: 0;
       top: 0;
 
       @apply max-sm:w-full py-10 text-bright-gray bg-slate-gray-transparent animate-moveInTop;
     }
   }
+
 }

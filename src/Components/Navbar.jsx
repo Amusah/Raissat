@@ -42,7 +42,7 @@ const Navbar = () => {
       </Link>
       {/* {toggleNav && ( */}
       <ul
-        className={`flex flex-col gap-5 sm:gap-2 sm:flex-row items-center justify-evenly md:w-[60%] mobile-menu ${
+        className={`flex flex-col gap-5 sm:gap-2 sm:flex-row items-center justify-evenly md:w-[60%] z-10 mobile-menu ${
           isMobile && (toggleNav ? "block" : "hidden")
         }`}
       >
@@ -55,8 +55,13 @@ const Navbar = () => {
         />
 
         {navItems.map((item, idx) => (
-          <li key={idx} className="text-[1rem] sm:text-base">
-            <NavLink to={item.route}>{item.text}</NavLink>
+          <li key={idx} className="">
+            <NavLink
+              className={"text-[1rem] md:text-[1.1rem]  text-base"}
+              to={item.route}
+            >
+              {item.text}
+            </NavLink>
           </li>
         ))}
 
