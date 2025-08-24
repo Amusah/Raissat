@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
-
-  @keyframes moveInTop {
+@keyframes moveInTop {
   0% {
     opacity: 0;
     transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes moveInbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
   100% {
@@ -25,6 +37,7 @@
   /* html{
     font-size: 62.5%;
   } */
+
 }
 
 @theme {
@@ -34,10 +47,10 @@
   --color-indian-yellow: #e3a54f;
   --color-bright-gray: #e5f3ec;
   --color-slate-gray: #76888799;
-  --color-slate-gray-transparent: rgba(118,136,135, 0.8);
+  --color-slate-gray-transparent: rgba(118, 136, 135, 0.8);
 
-  --animate-moveInTop: moveInTop .2s ease-in-out
-
+  --animate-moveInTop: moveInTop 0.2s ease-in-out;
+  --animate-moveInBottom: moveInbottom 0.2s ease-in-out
 }
 
 @layer components {
@@ -47,19 +60,17 @@
   }
 
   .btn {
-    @apply rounded-2xl text-white w-32 py-1.5 px-4 cursor-pointer;
+    @apply rounded-xl text-white w-32 py-1.5 px-4 cursor-pointer;
   }
 
-  .mobile-menu{
-    @media (width <= 640px){
+  .mobile-menu {
+    @media (width <= 639px) {
       position: absolute;
-      color: #fff;
+      /* color: #fff; */
       right: 0;
       top: 0;
-      
 
-      @apply max-sm:w-full py-10 bg-slate-gray-transparent animate-moveInTop
+      @apply max-sm:w-full py-10 text-bright-gray bg-slate-gray-transparent animate-moveInTop;
     }
   }
-
 }

@@ -7,6 +7,7 @@ import { navItems } from "../constants";
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [toggleDropDown, setToggleDropDown] = useState(false);
 
   // check mobile screen size
   useLayoutEffect(() => {
@@ -27,7 +28,10 @@ const Navbar = () => {
 
   function handleToggleNav() {
     setToggleNav((prev) => !prev);
-    console.log(toggleNav)
+  }
+
+  function handleToggleDropdown() {
+    setToggleDropDown((prev) => !prev);
   }
 
   return (
@@ -39,7 +43,7 @@ const Navbar = () => {
       {/* {toggleNav && ( */}
       <ul
         className={`flex flex-col gap-5 sm:gap-2 sm:flex-row items-center justify-evenly md:w-[60%] mobile-menu ${
-          isMobile && toggleNav ? "block" : "hidden"
+          isMobile && (toggleNav ? "block" : "hidden")
         }`}
       >
         {/* Nav toggler close btn */}
@@ -55,15 +59,27 @@ const Navbar = () => {
             <NavLink to={item.route}>{item.text}</NavLink>
           </li>
         ))}
+
         <li className=" hidden min-[990px]:block">
-          <button className="btn bg-midnight-green">Education</button>
+          {/* Education btn */}
+          <button
+            onClick={handleToggleDropdown}
+            className="btn bg-midnight-green"
+          >
+            Education
+          </button>
         </li>
+        {/* dropdown link to education route */}
         <li className="hidden max-sm:block">
           <NavLink to="education">Education</NavLink>
         </li>
       </ul>
-      {/* )} */}
-      <button className="btn bg-midnight-green hidden max-[990px]:block max-sm:hidden">
+
+      {/* Education btn */}
+      <button
+        onClick={handleToggleDropdown}
+        className="btn bg-midnight-green hidden max-[990px]:block max-sm:hidden"
+      >
         Education
       </button>
       <img
@@ -72,6 +88,23 @@ const Navbar = () => {
         src={hamburger}
         alt="hamburger"
       />
+      {/* Dropdown education menu */}
+      {toggleDropDown && (
+        <ul className="flex flex-col justify-center text-base gap-8 p-6 bg-slate-gray-transparent absolute text-bright-gray absolute max-[1025px]:right-8 lg:right-30 top-17 w-[250px] h-[300px] animate-moveInBottom">
+          <li>
+            <Link>School of Science</Link>
+          </li>
+          <li>
+            <Link>School of Agriculture</Link>
+          </li>
+          <li>
+            <Link>School of Technology</Link>
+          </li>
+          <li>
+            <Link>Interdisciplinary Studies</Link>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };
