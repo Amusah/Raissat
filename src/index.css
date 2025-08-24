@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+
+  @keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  /* html{
+    font-size: 62.5%;
+  } */
+}
+
+@theme {
+  --font-inter: "Inter";
+  --color-midnight-green: #025959;
+  --color-rich-black: #013440;
+  --color-indian-yellow: #e3a54f;
+  --color-bright-gray: #e5f3ec;
+  --color-slate-gray: #76888799;
+  --color-slate-gray-transparent: rgba(118,136,135, 0.8);
+
+  --animate-moveInTop: moveInTop .2s ease-in-out
+
+}
+
+@layer components {
+  .nav {
+    @apply py-4 px-8 font-medium max-[650px]:px-6;
+    /* font-weight: 500; */
+  }
+
+  .btn {
+    @apply rounded-2xl text-white w-32 py-1.5 px-4 cursor-pointer;
+  }
+
+  .mobile-menu{
+    @media (width <= 640px){
+      position: absolute;
+      color: #fff;
+      right: 0;
+      top: 0;
+      
+
+      @apply max-sm:w-full py-10 bg-slate-gray-transparent animate-moveInTop
+    }
+  }
+
+}
