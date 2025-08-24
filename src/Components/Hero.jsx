@@ -4,13 +4,13 @@ import { hero } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div
+    <section
       style={{ backgroundImage: `url(${hero}` }}
       className="w-full h-lvh bg-cover bg-top bg-no-repeat flex flex-col items-center justify-center relative"
     >
       <div className="absolute inset-0 bg-rich-black/40" />
 
-      <div className="z-10 flex flex-col gap-4 sm:gap-8 text-center p-3">
+      <div className="z-10 flex flex-col gap-6 sm:gap-8 text-center p-3">
         <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-Albert-sans text-white">
           Empowering Communities <br /> Through Science and Innovation
         </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
           Get Involved
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
