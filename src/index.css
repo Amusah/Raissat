@@ -80,4 +80,19 @@
     }
   }
 
+  .card{
+    @apply flex flex-col gap-3 text-white font-inter items-center;
+
+    img{
+      @apply w-10
+    }
+
+    h2{
+      @apply  font-medium text-xl mb-3
+    }
+    /* p{
+      @apply text-white font-inter 
+    } */
+  }
+
 }
