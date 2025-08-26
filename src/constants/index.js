@@ -1,6 +1,5 @@
 import { consult, management, research } from "../assets/assets";
 
-
 const navItems = [
   // {
   //   text: "Home",
@@ -42,7 +41,6 @@ const services = [
     text: "From conception to completion, we manage research projects with precision and impact in mind. RAISSAT specializes in coordinating multidisciplinary initiatives that tackle pressing global challenges....",
   },
 
-
   {
     icon: research,
     title: "Research-Inclined Capacity Building",
@@ -50,4 +48,36 @@ const services = [
   },
 ];
 
-export { navItems, about, services };
+const faqs = [
+  {
+    question: "What services do you offer?",
+    answer:
+      "RAISSAT provides a range of services, including consultancy, training, and research project management. Our focus is on applied science, agriculture, sustainability, and technology. We aim to empower communities through innovative solutions.",
+  },
+
+  {
+    question: "How can i get involved?",
+    answer:
+      "You can get involved by participating in our training programs or collaborating on research projects. We welcome partnerships that align with our mission. Visit our website for more information on opportunities.",
+  },
+
+  {
+    question: "Where are you located?",
+    answer:
+      "RAISSAT operates globally, with a focus on local communities. Our headquarters are located in Ibadan, Abraka, Lagos, Ogun, Bayelsa, Yobe - Nigeria. We also have various project sites worldwide.",
+  },
+
+  {
+    question: "What is your mission?",
+    answer:
+      "Our mission is to advance scientific research and practical training to empower communities. We focus on sustainability, food security, and technological progress. Through collaboration, we aim to create innovative solutions for a better future.",
+  },
+
+  {
+    question: "How can I contact you?",
+    answer:
+      "You can contact us through our website's contact form or by emailing us directly. We are here to answer any questions you may have. Reach out today to learn more about our services.",
+  },
+];
+
+export { navItems, about, services, faqs };

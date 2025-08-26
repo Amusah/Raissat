@@ -18,8 +18,8 @@ const Services = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {services.map((service) => (
-          <div className="card">
+        {services.map((service, index) => (
+          <div key={index} className="card">
             <img src={service.icon} alt="icon" />
             <h2>{service.title}</h2>
             <p>{service.text}</p>
