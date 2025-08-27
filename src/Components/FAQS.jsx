@@ -20,7 +20,7 @@ const FAQS = () => {
           Discover answers to your questions about RAISSAT and how we can assist
           you.
         </p>
-        <button className="btn bg-midnight-green mx-auto sm:mx-0">Connect</button>
+        <button className="btn w-32 bg-midnight-green mx-auto sm:mx-0">Connect</button>
       </div>
       <div className="sm:w-[60%] mx-auto">
         {faqs.map((faq, index) => (

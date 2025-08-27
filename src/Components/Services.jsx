@@ -9,7 +9,7 @@ const Services = () => {
         <h1 className="text-[36px] text-white font-medium font-inter">
           What We Do
         </h1>
-        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-Albert-sans text-indian-yellow">
+        <h1 className="h1 text-indian-yellow">
           Comprehensive Solutions for <br /> Sustainable Development
         </h1>
         <p className="text-white font-inter">

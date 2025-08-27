@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import AboutSummary from "../Components/AboutSummary";
 import Services from "../Components/Services";
 import FAQS from "../Components/FAQS";
+import CTA from "../Components/CTA";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <AboutSummary />
         <Services />
         <FAQS />
+        <CTA />
       </main>
     </>
   );

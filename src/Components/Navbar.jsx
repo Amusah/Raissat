@@ -69,7 +69,7 @@ const Navbar = () => {
           {/* Education btn */}
           <button
             onClick={handleToggleDropdown}
-            className="btn bg-midnight-green"
+            className="btn w-32 bg-midnight-green"
           >
             Education
           </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
       {/* Education btn */}
       <button
         onClick={handleToggleDropdown}
-        className="btn bg-midnight-green hidden max-[990px]:block max-sm:hidden"
+        className="btn w-32 bg-midnight-green hidden max-[990px]:block max-sm:hidden"
       >
         Education
       </button>
