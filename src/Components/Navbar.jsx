@@ -95,7 +95,7 @@ const Navbar = () => {
       />
       {/* Dropdown education menu */}
       {toggleDropDown && (
-        <ul className="flex flex-col justify-center text-base gap-8 p-6 bg-slate-gray-transparent absolute text-bright-gray absolute max-[1025px]:right-8 lg:right-30 top-17 w-[250px] h-[300px] animate-moveInBottom">
+        <ul className="flex flex-col justify-center text-base gap-8 p-6 bg-slate-gray-transparent text-bright-gray absolute max-[1025px]:right-8 lg:right-30 top-17 w-[250px] h-[300px] animate-moveInBottom">
           <li>
             <Link>School of Science</Link>
           </li>
