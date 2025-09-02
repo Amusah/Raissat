@@ -52,6 +52,7 @@
   --color-white: #fff;
   --color-slate-gray: #76888799;
   --color-slate-gray-transparent: rgba(118, 136, 135, 0.8);
+  --color-midnight-green-transparent: rgba(2, 89, 89, 0.6);
 
   --animate-moveInTop: moveInTop 0.2s ease-in-out;
   --animate-moveInBottom: moveInbottom 0.2s ease-in-out
@@ -75,8 +76,13 @@
       position: absolute;
       right: 0;
       top: 0;
+      
 
-      @apply max-sm:w-full py-10 text-bright-gray bg-slate-gray-transparent animate-moveInTop;
+      li:not(:first-child) {
+        margin-bottom: 0;
+      }
+
+      @apply max-sm:w-[70%] h-screen py-10 gap-2 text-bright-gray bg-midnight-green-transparent backdrop-blur-md animate-moveInTop;
     }
   }
 

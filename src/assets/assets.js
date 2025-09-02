@@ -6,7 +6,11 @@ import hero from "./hero.png";
 import consult from "./consult.svg";
 import management from "./management.svg";
 import research from "./research.svg";
-import whiteLogo from './white-logo-tablet.svg';
+import whiteLogoRound from './white-logo-tablet.svg';
+import whiteLogo from './white-logo.svg';
+import x from './X.svg';
+import instagram from './instagram.svg';
+import linkdin from './linkdin.svg';
 
 export {
   logo,
@@ -17,5 +21,9 @@ export {
   consult,
   management,
   research,
+  whiteLogoRound,
   whiteLogo,
+  x,
+  instagram,
+  linkdin
 };

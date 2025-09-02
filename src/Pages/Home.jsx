@@ -5,6 +5,7 @@ import AboutSummary from "../Components/AboutSummary";
 import Services from "../Components/Services";
 import FAQS from "../Components/FAQS";
 import CTA from "../Components/CTA";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Services />
         <FAQS />
         <CTA />
+        <Footer />
       </main>
     </>
   );

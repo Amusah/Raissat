@@ -25,6 +25,7 @@ const FAQS = () => {
       <div className="sm:w-[60%] mx-auto">
         {faqs.map((faq, index) => (
           <Accordion
+          key={index}
             data={faq}
             index={index}
             handleToggle={handleToggle}
