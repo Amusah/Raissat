@@ -12,7 +12,7 @@ const Footer = () => {
         <img className="w-[200px]" src={whiteLogo} alt="Brand Logo" />
         <p className="text-white text-sm ">
           Research Applied Institute for Sustainability in Science,
-          Agriculture and Technology
+          Agriculture and Technology
         </p>
         <span className="flex gap-4 mt-6">
           <a href="#">

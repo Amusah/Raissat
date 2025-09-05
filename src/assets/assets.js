@@ -12,6 +12,17 @@ import x from './X.svg';
 import instagram from './instagram.svg';
 import linkdin from './linkdin.svg';
 
+// Profiles
+import elohozino from './Profiles/Elohozino.svg';
+import samuel from './Profiles/Samuel.svg';
+import goshen from './Profiles/Goshen.svg';
+import sunday from './Profiles/Sunday.svg';
+import josephine from './Profiles/Josephine.svg';
+import christiana from './Profiles/Christiana.svg';
+import adejoke from './Profiles/Adejoke.svg';
+import rightArrow from './Profiles/right-arrow.svg';
+
+
 export {
   logo,
   logoMd,
@@ -26,4 +37,8 @@ export {
   x,
   instagram,
   linkdin
+};
+
+export {
+  elohozino, samuel, goshen, sunday, josephine, christiana, adejoke, rightArrow
 };

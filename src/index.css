@@ -102,4 +102,12 @@
     @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-Albert-sans;
   }
 
+  .main{
+    @apply mt-5 px-8;
+  }
+
+  .p{
+    @apply font-inter leading-7 text-xs sm:text-sm;
+  }
+
 }
