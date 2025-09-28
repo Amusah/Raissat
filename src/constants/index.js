@@ -1,5 +1,6 @@
-import { consult, management, research } from "../assets/assets";
+import { iconConsult, iconManagement, iconResearch } from "../assets/assets";
 
+// staff Profiles images
 import {
   elohozino,
   samuel,
@@ -8,6 +9,11 @@ import {
   josephine,
   christiana,
   adejoke,
+  agric,
+  publicHealth,
+  sustainability,
+  innovation,
+  technology
 } from "../assets/assets";
 
 const navItems = [
@@ -21,7 +27,7 @@ const navItems = [
   },
   {
     text: "What We Do",
-    route: "/what-we-do",
+    route: "/services",
   },
   {
     text: "Media center",
@@ -41,21 +47,48 @@ const about = {
 
 const services = [
   {
-    icon: consult,
+    id: "consultancy",
     title: "Consultancy",
-    text: "We provide expert-driven sustainability consultancy that helps organizations, governments, and communities integrate eco-conscious practices into their operations.....",
+    text: "We provide expert-driven sustainability consultancy that helps organizations, governments, and communities integrate eco-conscious practices into their operations. Our team works across sectors- science, agriculture, and technology-to design solutions that are not only innovative but also practical and scalable. Whether it’s climate-smart agriculture, sustainable resource management, or green technology adoption, RAISSAT ensures your goals align with the UN Sustainable Development Goals (SDGs).",
+    icon: iconConsult,
+    rationale: "Tailored, research-backed strategies that bridge science and real-world application.Actionable insights and strategies that drive real-world sustainability impact",
+    image: ''
   },
 
   {
-    icon: management,
+    id: "project-management",
     title: "Project Management",
-    text: "From conception to completion, we manage research projects with precision and impact in mind. RAISSAT specializes in coordinating multidisciplinary initiatives that tackle pressing global challenges....",
+    text: "From conception to completion, we manage research projects with precision and impact in mind. RAISSAT specializes in coordinating multidisciplinary initiatives that tackle pressing global challenges-climate change, food security, renewable energy, and more. We ensure effective planning, resource mobilization, monitoring, and knowledge dissemination so that projects don’t just exist on paper but create meaningful change on the ground.",
+    icon: iconManagement,
+    rationale: "Structured project execution that turns ground-breaking ideas into transformative realities",
+    image: ''
   },
 
   {
-    icon: research,
+    id: "research-inclined-capacity-building",
     title: "Research-Inclined Capacity Building",
-    text: "We design and deliver training programs that empower researchers, professionals, and institutions with the skills and tools needed to thrive in sustainability-driven innovation...",
+    text: "We design and deliver training programs that empower researchers, professionals, and institutions with the skills and tools needed to thrive in sustainability-driven innovation. Our workshops, masterclasses, and practical training modules focus on cutting-edge topics in science, agriculture, and technology, nurturing a new generation of problem-solvers ready to drive global impact.",
+    icon: iconResearch,
+    rationale: "Hands-on learning that transforms knowledge into practical solutions and career growth.",
+    image: ''
+  },
+
+  {
+    id: "policy-engagement-and-communication",
+    title: "Policy Engagement and Communication",
+    text: "RAISSAT bridges the gap between research and policy by translating complex scientific findings into actionable insights for policymakers, stakeholders, and communities. Through strategic advocacy, policy briefs, and stakeholder dialogues, we amplify evidence-based solutions that shape effective sustainable development policies. Our communications arm further ensures that sustainability narratives are accessible, engaging, and influential.",
+    icon: "",
+    rationale: "Clear, powerful communication that drives policy change and collective action.",
+    image: ''
+  },
+
+  {
+    id: "youth-mentoring-and-engagement",
+    title: "Youth Mentoring and Engagement",
+    text: "In the journey to build sustainable, healthy, and inclusive communities, one truth remains constant: youth are not just the future, they are the now. We believe the future of sustainability lies in the hands of young innovators. These young minds are energetic, innovative, and deeply connected to the pulse of the communities we aim to impact. Through mentorship programs, fellowships, research opportunities, and interactive youth forums, RAISSAT nurtures creativity, leadership, and problem-solving skills among young people.",
+    icon: "",
+    rationale: "By connecting them with experts and platforms, we empower youth to lead sustainability initiatives in their communities and beyond.",
+    image: ''
   },
 ];
 
@@ -168,4 +201,44 @@ const aboutPage = {
   ],
 };
 
-export { navItems, about, services, faqs, aboutPage };
+const whatWeDo = [
+  {
+    title: "Agriculture & Food Security:",
+    description:
+      "Agriculture remains the backbone of many African economies, yet it is often seen as outdated or unattractive by young people. RAISSAT will engage students in agritech, sustainable farming practices, and value chain innovation, thereby shifting this mindset and harnessing youth potential in transforming Africa’s agricultural landscape. Example: The students can be supported to launch smart farms, run campus-based agribusiness incubators, or lead research on local crop adaptation and food preservation methods.",
+    image: agric,
+    flexDirection: "",
+  },
+  {
+    title: "Public Health Advocacy:",
+    description:
+      "Students are natural communicators. When empowered with accurate health information, they can lead peer education campaigns, organize campus health outreaches, and promote awareness on issues like infectious diseases, hygiene, mental health, and reproductive health. Example: A student-led RAISSAT health club on campus can host awareness days on neglected tropical diseases, emerging infectious diseases, malaria prevention, or mental health.",
+    image: publicHealth,
+    flexDirection: "row-reverse",
+  },
+
+  {
+    title: "Environmental Sustainability:",
+    description:
+      "Young people are often the most passionate environmental stewards. Through clubs, projects, and innovation challenges, they can contribute fresh ideas to conservation, recycling, climate action, and wildlife protection. Example: Students can lead campus tree-planting drives, research indigenous biodiversity, or create awareness campaigns around endangered species.",
+    image: sustainability,
+    flexDirection: "",
+  },
+
+  {
+    title: "Research and Innovation:",
+    description:
+      "Universities and polytechnics are research hubs. When the students are getting engaged, RAISSAT taps into a pool of talent eager to explore practical solutions. The students can contribute to data collection, surveys, community-based participatory research, and even co-author publications. Example: RAISSAT will collaborate with academic departments to integrate student-led research into its community projects",
+    image: innovation,
+    flexDirection: "row-reverse",
+  },
+  {
+    title: "Technology for Social Impact:",
+    description:
+      "Tertiary institutions are fertile ground for digital innovation. The students can design mobile apps, build websites, or manage digital campaigns that amplify RAISSAT’s impact and connect underserved communities with resources. Example: A campus tech club could design an app to track water quality or create animated videos for health education in local languages.",
+    image: technology,
+    flexDirection: "",
+  },
+];
+
+export { navItems, about, services, faqs, aboutPage, whatWeDo };

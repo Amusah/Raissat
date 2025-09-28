@@ -27,6 +27,10 @@
   }
 }
 
+.active{
+  color: var(--color-indian-yellow);
+}
+
 
 @layer base {
   /* *{
@@ -107,7 +111,11 @@
   }
 
   .p{
-    @apply font-inter leading-7 text-xs sm:text-sm;
+    @apply font-inter leading-6 text-xs sm:text-sm;
   }
 
+}
+
+.link{
+  @apply bg-midnight-green text-[10px] text-white py-2 px-4 rounded-lg font-medium hover:bg-rich-black transition duration-300 font-inter cursor-pointer;
 }

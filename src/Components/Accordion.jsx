@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 
 import { X, ChevronDown } from "lucide-react";
 
@@ -32,7 +31,7 @@ const Accordion = ({ data, index, isOpen, handleToggle }) => {
       </div>
       {/* Accordion Body */}
       <div
-        className={`text-xs transition-all duration-300 overflow-hidden transition-all duration-500 ease-in-out ${
+        className={`text-xs duration-300 overflow-hidden transition-all duration-500 ease-in-out ${
           isOpen ? "max-h-40 opacity-100 mt-2 mt-3 " : "max-h-0 opacity-0 mt-0"
         }`}
       >

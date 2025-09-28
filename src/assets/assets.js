@@ -3,9 +3,9 @@ import logoMd from "./logo-tablet.svg";
 import hamburger from "./hamburger.svg";
 import close from "./close.svg";
 import hero from "./hero.png";
-import consult from "./consult.svg";
-import management from "./management.svg";
-import research from "./research.svg";
+import iconConsult from "./iconConsult.svg";
+import iconManagement from "./iconManagement.svg";
+import iconResearch from "./iconResearch.svg";
 import whiteLogoRound from './white-logo-tablet.svg';
 import whiteLogo from './white-logo.svg';
 import x from './X.svg';
@@ -22,6 +22,13 @@ import christiana from './Profiles/Christiana.svg';
 import adejoke from './Profiles/Adejoke.svg';
 import rightArrow from './Profiles/right-arrow.svg';
 
+import agric from './agric.svg';
+import publicHealth from './publicHealth.svg';
+import sustainability from './sustainability.svg';
+import innovation from './innovation.svg';
+import technology from './technology.svg'
+
+
 
 export {
   logo,
@@ -29,14 +36,19 @@ export {
   hamburger,
   close,
   hero,
-  consult,
-  management,
-  research,
+  iconConsult,
+  iconManagement,
+  iconResearch,
   whiteLogoRound,
   whiteLogo,
   x,
   instagram,
-  linkdin
+  linkdin,
+  agric,
+  publicHealth,
+  sustainability,
+  innovation,
+  technology
 };
 
 export {
