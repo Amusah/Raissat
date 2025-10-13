@@ -1,8 +1,11 @@
-import React from "react";
+import {useNavigate} from "react-router";
 
 import { services } from "../constants";
+import {truncateText} from "../utils";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-rich-black p-16 text-center">
       <div className="flex flex-col gap-5 mb-20">
@@ -22,11 +25,11 @@ const Services = () => {
           <div key={index} className="card">
             <img src={service.icon} alt="icon" />
             <h2>{service.title}</h2>
-            <p>{service.text}</p>
+            <p>{truncateText(service.text, 25)}</p>
           </div>
         ))}
       </div>
-      <button className="btn bg-indian-yellow mt-15">Learn More</button>
+      <button onClick={() => navigate('services')} className="btn bg-indian-yellow mt-15">Learn More</button>
     </section>
   );
 };

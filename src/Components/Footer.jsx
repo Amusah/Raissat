@@ -7,12 +7,12 @@ import { linkdin } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-rich-black font-inter p-10 flex flex-col sm:flex-row items-center justify-center">
+    <footer className="bg-rich-black font-inter py-10 px-4 sm:px-8 md:px-15 lg:px-30 flex flex-col sm:flex-row items-center justify-center">
       <div className="flex flex-col gap-1 w-full sm:w-[50%]">
         <img className="w-[200px]" src={whiteLogo} alt="Brand Logo" />
         <p className="text-white text-sm ">
-          Research Applied Institute for Sustainability in Science,
-          Agriculture and Technology
+          Research Applied Institute for Sustainability in Science, Agriculture
+          and Technology
         </p>
         <span className="flex gap-4 mt-6">
           <a href="#">

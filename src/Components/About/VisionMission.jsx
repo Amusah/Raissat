@@ -4,14 +4,14 @@ const { vision, mision } = aboutPage;
 
 const VisionMission = () => {
   return (
-    <section className="p-8 bg-rich-black text-white font-inter">
+    <section className="py-10 px-4 sm:px-8 md:px-15 lg:px-30 bg-rich-black text-white font-inter text-center">
       <div className="mb-8">
-        <h1 className="mb-5 font-semibold">{vision.title}</h1>
-        <p className="text-xs sm:text-sm leading-6">{vision.text}</p>
+        <h1 className="mb-5 font-semibold text-xl">{vision.title}</h1>
+        <p className="p leading-6">{vision.text}</p>
       </div>
       <div>
-        <h1 className="mb-5 font-semibold">{mision.title}</h1>
-        <p className="text-xs sm:text-sm leading-6">{mision.text}</p>
+        <h1 className="mb-5 font-semibold text-xl">{mision.title}</h1>
+        <p className="p leading-6">{mision.text}</p>
       </div>
     </section>
   );

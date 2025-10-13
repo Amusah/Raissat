@@ -18,6 +18,7 @@ function App() {
           <Route path="services" element={<WhatWeDo />} />
           <Route path="media" element={<Media />} />
           <Route path="services/:serviceId" element={<ServicePage />} />
+          {/* <Route  */}
         </Route>
       </Routes>
     </BrowserRouter>
