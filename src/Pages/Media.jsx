@@ -1,8 +1,13 @@
-import React from 'react'
+import Nav from "../Components/Media/Nav"
+import CardRow from "../Components/Media/CardRow"
+import Container from "../Components/Container"
 
 const Media = () => {
   return (
-    <div>Media</div>
+    <Container>
+      <Nav />
+      <CardRow />
+    </Container>
   )
 }
 

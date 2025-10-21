@@ -26,6 +26,9 @@ import {
   technology,
 } from "../assets/assets";
 
+// Media center images
+import { locust, farmConflict } from '../assets/assets';
+
 const navItems = [
   // {
   //   text: "Home",
@@ -49,7 +52,7 @@ const navItems = [
   },
 ];
 
-// About Section component
+// For About Section component
 const about = {
   title: "Who We Are",
   text: "The Research Applied Institute for Sustainability in Science, Agriculture and Technology (RAISSAT) is a non-government research organization that works to promote sustainability that transforms the future through the bridging of science, agriculture and technology to create ground-breaking sustainable solutions. Our mission is rooted in the belief that critical global issues can be effectively addressed and sustainable solutions developed through impactful multidisciplinary research. Therefore, in implementing our various activities through research, education, community-based outreach, media projects and advocacy, the core values of “Sustainable Development Goals” are consistently integrated to achieve realistic and impactful results in science, agriculture and technology.",
@@ -520,4 +523,48 @@ const whatWeDo = [
   },
 ];
 
-export { navItems, about, services, faqs, aboutPage, whatWeDo };
+const media = {
+  blogs: [
+    {
+      title: "Ethiopia's Battle Against the Locust Invation",
+      body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few ",
+      author: "Elohozino O. Benneth",
+      date: "June 10, 2024",
+      image: locust,
+    },
+
+    {
+      title: "Conflict Between Herdsmen and Farmers in North Central Nigeria",
+      body: "Through the innovative application of cutting-edge science and extensive trials led by dedicated farmers, RAISSAT has successfully introduced a diverse range of natural pest control methods that are revolutionizing the agricultural landscape.",
+      author: "Goshen David Miteu",
+      date: "June 10, 2024",
+      image: farmConflict,
+    },
+  ],
+  articles: [
+    {
+      title: "Understanding Monkey Pox: A Growing Concern in Congo DRC",
+      body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few ",
+      author: "Christianah Oki",
+      date: "June 10, 2024",
+    },
+
+    {
+      title: "Mad Cow Disease: A Brief Overview of BSE",
+      body: "Through the innovative application of cutting-edge science and extensive trials led by dedicated farmers, RAISSAT has successfully introduced a diverse range of natural pest control methods that are revolutionizing the agricultural landscape. ",
+      author: "Adejoke A. Ododor",
+      date: "June 10, 2024",
+    },
+
+    {
+      title: "Climate-Resilient Farming Initiative - Northern Ghana",
+      body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few  ",
+      author: "Samuel I. Ogah",
+      date: "June 10, 2024",
+    },
+  ],
+  newsletters: [],
+  resources: [],
+};
+
+export { navItems, about, services, faqs, aboutPage, whatWeDo, media };

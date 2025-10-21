@@ -35,6 +35,10 @@ import imagePolicy from './imagePolicy.svg';
 import imageResearch from './imageResearch.svg';
 import imageMentoring from './imageMentoring.svg';
 
+// Media center images
+import locust from './Media/locust.png';
+import farmConflict from './Media/farm-conflict.png';
+
 
 
 
@@ -70,4 +74,9 @@ export {
   iconConsult,
   iconManagement,
   iconResearch,
+};
+
+export {
+  locust,
+  farmConflict,
 };
