@@ -27,7 +27,7 @@ import {
 } from "../assets/assets";
 
 // Media center images
-import { locust, farmConflict } from '../assets/assets';
+import { locust, farmConflict, climateFarming, pestManagement } from '../assets/assets';
 
 const navItems = [
   // {
@@ -529,16 +529,27 @@ const media = {
       title: "Ethiopia's Battle Against the Locust Invation",
       body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few ",
       author: "Elohozino O. Benneth",
+      authorProfile: elohozino,
       date: "June 10, 2024",
-      image: locust,
+      thumbnail: locust,
     },
 
     {
       title: "Conflict Between Herdsmen and Farmers in North Central Nigeria",
       body: "Through the innovative application of cutting-edge science and extensive trials led by dedicated farmers, RAISSAT has successfully introduced a diverse range of natural pest control methods that are revolutionizing the agricultural landscape.",
       author: "Goshen David Miteu",
+      authorProfile: elohozino,
       date: "June 10, 2024",
-      image: farmConflict,
+      thumbnail: farmConflict,
+    },
+
+    {
+      title: "Integrated Pest Management Program - West Africa",
+      body: "AISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few ",
+      author: "Goshen David Miteu",
+      authorProfile: elohozino,
+      date: "June 10, 2024",
+      thumbnail: pestManagement,
     },
   ],
   articles: [

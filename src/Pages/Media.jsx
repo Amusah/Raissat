@@ -1,14 +1,61 @@
-import Nav from "../Components/Media/Nav"
-import CardRow from "../Components/Media/CardRow"
-import Container from "../Components/Container"
+import Nav from "../Components/Media/Nav";
+import CardRow from "../Components/Media/CardRow";
+import Container from "../Components/Container";
+import MediaCard from "../Components/Media/MediaCard";
+
+import { media } from "../constants";
+import { useState } from "react";
+const { blogs } = media;
 
 const Media = () => {
-  return (
-    <Container>
-      <Nav />
-      <CardRow />
-    </Container>
-  )
-}
+  const [activeTab, setActiveTab] = useState("All");
 
-export default Media
+  return (
+    <Container className="lg:!px-20 pb-8">
+      <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
+      {activeTab === "All" && (
+        <>
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {blogs.map((blog) => (
+              <CardRow
+                title={blog.title}
+                thumbnail={blog.thumbnail}
+                authorProfile={blog.authorProfile}
+                body={blog.body}
+              />
+            ))}
+          </section>
+
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <MediaCard />
+            <MediaCard />
+            <MediaCard />
+          </section>
+        </>
+      )}
+
+      {activeTab === "Blogs" && (
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {blogs.map((blog) => (
+            <CardRow
+              title={blog.title}
+              thumbnail={blog.thumbnail}
+              authorProfile={blog.authorProfile}
+              body={blog.body}
+            />
+          ))}
+        </section>
+      )}
+
+      {activeTab === "Media" && (
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <MediaCard />
+          <MediaCard />
+          <MediaCard />
+        </section>
+      )}
+    </Container>
+  );
+};
+
+export default Media;

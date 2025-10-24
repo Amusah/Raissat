@@ -38,6 +38,8 @@ import imageMentoring from './imageMentoring.svg';
 // Media center images
 import locust from './Media/locust.png';
 import farmConflict from './Media/farm-conflict.png';
+import climateFarming from './Media/climate-farming.png';
+import pestManagement from './Media/pest-management.png';
 
 
 
@@ -76,7 +78,4 @@ export {
   iconResearch,
 };
 
-export {
-  locust,
-  farmConflict,
-};
+export { locust, farmConflict, climateFarming, pestManagement };
