@@ -27,7 +27,7 @@ import {
 } from "../assets/assets";
 
 // Media center images
-import { locust, farmConflict, climateFarming, pestManagement } from '../assets/assets';
+import { locust, farmConflict, climateFarming, pestManagement, cow, doctor } from '../assets/assets';
 
 const navItems = [
   // {
@@ -557,21 +557,28 @@ const media = {
       title: "Understanding Monkey Pox: A Growing Concern in Congo DRC",
       body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few ",
       author: "Christianah Oki",
+      authorProfile: christiana,
       date: "June 10, 2024",
+      thumbnail: doctor
     },
 
     {
       title: "Mad Cow Disease: A Brief Overview of BSE",
       body: "Through the innovative application of cutting-edge science and extensive trials led by dedicated farmers, RAISSAT has successfully introduced a diverse range of natural pest control methods that are revolutionizing the agricultural landscape. ",
       author: "Adejoke A. Ododor",
+      authorProfile: adejoke,
       date: "June 10, 2024",
+      thumbnail: cow
     },
 
     {
       title: "Climate-Resilient Farming Initiative - Northern Ghana",
       body: "RAISSAT has embarked on an inspiring journey to empower smallholder farmers by providing them with extensive training in sustainable soil management techniques and effective water conservation practices. Over the past few  ",
       author: "Samuel I. Ogah",
+      authorProfile: samuel,
       date: "June 10, 2024",
+      thumbnail: climateFarming
+
     },
   ],
   newsletters: [],

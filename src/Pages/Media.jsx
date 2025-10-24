@@ -5,7 +5,7 @@ import MediaCard from "../Components/Media/MediaCard";
 
 import { media } from "../constants";
 import { useState } from "react";
-const { blogs } = media;
+const { blogs, articles } = media;
 
 const Media = () => {
   const [activeTab, setActiveTab] = useState("All");
@@ -52,6 +52,19 @@ const Media = () => {
           <MediaCard />
           <MediaCard />
           <MediaCard />
+        </section>
+      )}
+
+      {activeTab === "Articles" && (
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {articles.map((article) => (
+            <CardRow
+              title={article.title}
+              thumbnail={article.thumbnail}
+              authorProfile={article.authorProfile}
+              body={article.body}
+            />
+          ))}
         </section>
       )}
     </Container>

@@ -40,6 +40,8 @@ import locust from './Media/locust.png';
 import farmConflict from './Media/farm-conflict.png';
 import climateFarming from './Media/climate-farming.png';
 import pestManagement from './Media/pest-management.png';
+import doctor from './Media/doctor.png';
+import cow from './Media/cow.png';
 
 
 
@@ -78,4 +80,4 @@ export {
   iconResearch,
 };
 
-export { locust, farmConflict, climateFarming, pestManagement };
+export { locust, farmConflict, climateFarming, pestManagement, doctor, cow };
