@@ -1,4 +1,3 @@
-
 import { X, ChevronDown } from "lucide-react";
 
 const Accordion = ({ data, index, isOpen, handleToggle }) => {
@@ -20,7 +19,7 @@ const Accordion = ({ data, index, isOpen, handleToggle }) => {
         onClick={() => handleToggle(index)}
         className="flex justify-between items-center cursor-pointer"
       >
-        <h1 className="font-medium text-sm text-midnight-green">
+        <h1 className="font-medium text-md text-midnight-green">
           {data.question}
         </h1>
         <ChevronDown
@@ -31,8 +30,8 @@ const Accordion = ({ data, index, isOpen, handleToggle }) => {
       </div>
       {/* Accordion Body */}
       <div
-        className={`text-xs duration-300 overflow-hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-40 opacity-100 mt-2 mt-3 " : "max-h-0 opacity-0 mt-0"
+        className={`text-md overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-40 opacity-100 mt-2 " : "max-h-0 opacity-0 mt-0"
         }`}
       >
         <p>{data.answer}</p>

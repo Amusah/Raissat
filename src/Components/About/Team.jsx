@@ -17,7 +17,7 @@ const Team = () => {
 
   return (
     <div className="relative py-8 font-inter px-4 sm:px-4 md:px-15 lg:px-30">
-      <h1 className="h1 text-center mb-4">The Board</h1>
+      {/* <h1 className="h1 text-center mb-4">The Board</h1>
       <p className="p leading-6 mb-6 text-center">
         Business Advisor | Legal Advisor | Academic Advisors - Science,
         Agriculture and Technology | Grants Advisors | Influencers
@@ -33,25 +33,30 @@ const Team = () => {
             handleToggleModal={() => handleToggleModal(member.id)}
           />
         ))}
-      </div>
-      {/* <ul className="list-disc px-4 text-xs sm:text-sm">
-        <li>Business Advisor</li>
-        <li>Legal Advisor</li>
-        <li>Academic Advisors - Science, Agriculture and Technology</li>
-        <li>Grants Advisors</li>
-        <li>Influencers</li>
-      </ul> */}
-      <div className="w-full text-center mt-[100px]">
-        <span className="text-xl w-2 bg-midnight-green btn text-bright-gray font-semibold">
+      </div> */}
+
+      <div className="w-full mt-12 text-center">
+        <h1 className=" bg-midnight-green rounded-xl text-bright-gray font-bold text-center  md:w-lg mx-auto  py-3">
           Meet the Team
-        </span>
-        <p className="mt-6 p leading-6">
-          Professional headshots and short profiles of research expertise and
-          capabilities as it relates to the future advancement of RAISSAT
+        </h1>
+        <p className="mt-6 p leading-6 font-bold text-center md:text-left">
+          Our Team & Leadership Philosophy
+        </p>
+        <p className="mt-6 p leading-6 text-center md:text-left">
+          Led by visionary experts across science, business, and public policy,
+          for RAISSAT’s leadership it is more than governance, it’s
+          collaboration in action. Our executive team brings together diverse
+          expertise in science, agriculture, and technology, united by a shared
+          vision: to turn evidence into sustainable impact. Each leader embodies
+          the institute’s core values of integrity, innovation, and inclusion,
+          working collectively to bridge the gap between research and real-world
+          solutions. Together, they inspire a culture of purpose-driven
+          excellence where bold ideas become transformative outcomes for
+          communities and the planet.
         </p>
       </div>
       {/* cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
         {team.map((member, index) => (
           <Card
             key={index}
@@ -70,10 +75,10 @@ const Team = () => {
         </div>
       )}
 
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <hr class="border-t-1 border-rich-black" />
 
-        {/* Our Impact */}
+        // Our Impact
         <h1 className="h1 text-center mt-10">Our Impact</h1>
         <p className="p leading-6 my-4 text-center">
           Our Impact The Research Applied Institute for Sustainability in
@@ -89,7 +94,7 @@ const Team = () => {
           articles on sustainability which captures agricultural, science and
           technological research advancements from a global perspective.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

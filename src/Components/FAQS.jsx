@@ -16,14 +16,14 @@ const FAQS = () => {
         <h1 className="font-base text-3xl sm:text-4xl md:text-5xl font-inter text-midnight-green">
           FAQs
         </h1>
-        <p className="font-inter text-xs">
+        <p className="font-inter text-sm">
           Discover answers to your questions about RAISSAT and how we can assist
           you.
         </p>
-        <button className="btn w-32 bg-midnight-green mx-auto sm:mx-0">Connect</button>
+        <button className="btn w-32 bg-midnight-green mx-auto sm:mx-0">More</button>
       </div>
       <div className="sm:w-[60%] mx-auto">
-        {faqs.map((faq, index) => (
+        {faqs.slice(0, 8).map((faq, index) => (
           <Accordion
           key={index}
             data={faq}

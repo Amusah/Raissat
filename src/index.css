@@ -119,5 +119,5 @@
 }
 
 .link{
-  @apply bg-midnight-green text-[10px] text-white py-2 px-4 rounded-lg font-medium hover:bg-rich-black transition duration-300 font-inter cursor-pointer;
+  @apply bg-midnight-green text-white py-2 px-4 rounded-lg font-medium hover:bg-rich-black transition duration-300 font-inter cursor-pointer;
 }

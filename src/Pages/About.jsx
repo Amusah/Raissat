@@ -6,7 +6,7 @@ const About = () => {
   return (
   <div className="bg-bright-gray">
     <AboutFull />
-    <VisionMission />
+    {/* <VisionMission /> */}
     <Team />
   </div>
   )

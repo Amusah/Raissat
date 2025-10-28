@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router";
+
+import { handleCtaClick } from "../utils";
 
 import { hero } from "../assets/assets";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       style={{ backgroundImage: `url(${hero}` }}
@@ -12,16 +17,29 @@ const Hero = () => {
 
       <div className="z-10 flex flex-col gap-6 sm:gap-8 text-center p-3">
         <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-Albert-sans text-white">
-          Empowering Communities <br /> Through Science and Innovation
+          From Evidence to Impact: Translating Research Into Action for a
+          Sustainable Future
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-white font-inter sm:w-[70%] mx-auto">
-          At RAISSAT, we bridge the gap between research and real-world
-          applications, focusing on Applied Science, Agriculture,
-          Sustainability, and Technology.
+        <p className="text-md md:text-xl text-white font-inter sm:w-[70%] mx-auto">
+          At RAISSAT, we bridge the worlds of science, agriculture, and
+          technology to turn knowledge into real-world transformation. Through
+          research, policy innovation, and capacity building, we empower people
+          and systems to thrive sustainably.
         </p>
-        <button className="btn bg-indian-yellow w-32 mx-auto">
-          Get Involved
-        </button>
+        <span className="w-full flex justify-center flex-col sm:flex-row gap-4">
+          <button
+            onClick={() => handleCtaClick(navigate, "services")}
+            className="btn bg-indian-yellow hover:bg-indian-yellow/90 max-sm:w-[70%] max-sm:mx-auto"
+          >
+            Explore Our Impact
+          </button>
+          <button
+            onClick={() => handleCtaClick(navigate, "contact")}
+            className="btn border-3 border-indian-yellow hover:bg-indian-yellow/90 max-sm:w-[70%] max-sm:mx-auto"
+          >
+            Partner With Us
+          </button>
+        </span>
       </div>
     </section>
   );
