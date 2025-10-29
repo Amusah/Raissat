@@ -12,9 +12,8 @@ const Nav = ({ activeTab, setActiveTab }) => {
             "All",
             "Blogs",
             "Media",
-            "Articles",
-            "News letters",
-            "Resources",
+            
+            
           ].map((link) => (
             <li onClick={() => setActiveTab(link)}
               className={`font-inter font-medium text-sm md:text-md lg:text-lg ${

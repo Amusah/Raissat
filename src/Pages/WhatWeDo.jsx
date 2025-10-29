@@ -5,18 +5,37 @@ import { Link } from "react-router";
 import { whatWeDo } from "../constants";
 import { services } from "../constants";
 
-const Card = ({ title, description, image, direction, to }) => {
-  const flexDirection =
-    direction === "row-reverse" ? "md:flex-row-reverse" : "md:flex-row";
+// const Card = ({ title, description, image, direction, to }) => {
+//   const flexDirection =
+//     direction === "row-reverse" ? "md:flex-row-reverse" : "md:flex-row";
+//   return (
+//     <div
+//       className={`flex flex-col ${flexDirection} gap-5 font-inter not-last:mb-10`}
+//     >
+//       <img src={image} alt="image" className="h-auto object-cover" />
+//       <div className="">
+//         <h2 className="font-bold text-xl mb-3">{title}</h2>
+//         <p className="p mb-3">{description}</p>
+//       </div>
+//     </div>
+//   );
+// };
+
+const Card = ({ title, subTitle, description, image, direction, to }) => {
+  // const flexDirection =
+  //   direction === "row-reverse" ? "md:flex-row-reverse" : "md:flex-row";
   return (
-    <div
-      className={`flex flex-col ${flexDirection} gap-5 font-inter not-last:mb-10`}
-    >
-      <img src={image} alt="image" className="h-auto object-cover" />
-      <div className="">
-        <h2 className="font-bold text-xl mb-3">{title}</h2>
-        {/* <p className="p font-semibold mb-2">{subTitle}</p> */}
-        <p className="p mb-3">{description}</p>
+    <div className="flex justify-center flex-col md:flex-row gap-8 mb-16 ">
+      <div className="w-full md:w-[50%] h-80  overflow-hidden">
+        <img src={image} alt="image" className="h-full w-full object-cover" />
+      </div>
+      <div className="w-full md:w-[50%]">
+        <h1 className="h1 font-bold">{title}</h1>
+        <p className="font-bold p mt-4">{subTitle}</p>
+        <p className="p mt-2 mb-8">{description}</p>
+        <Link to={to} className="link w-1/2">
+          Read More
+        </Link>
       </div>
     </div>
   );
@@ -83,31 +102,24 @@ const WhatWeDo = () => {
             </Link>
           </div> */}
         </div>
-        {/* <p className="my-20 p">
-          We focus on several critical areas, public health, environmental
-          sustainability, research, advocacy, and technology for development.
-          The students in tertiary institutions are uniquely positioned to drive
-          progress across each of these themes. Here is how this involves the
-          students
-        </p> */}
-        <div>
-          <h1 className="h1 font-bold">Research Project Management</h1>
-          <p className="font-bold p mt-4">Turning Evidence into Action</p>
-          <p className="p mt-2 mb-8">
-            We lead and manage high-impact research programs from concept to
-            completion, ensuring scientific rigor, measurable outcomes, and
-            community relevance. Our project management approach aligns with
-            international standards — integrating monitoring, evaluation, and
-            learning frameworks that turn data into decisions and discoveries
-            into sustainable solutions
-          </p>
-          <Link
-            to={`${serviceObj["research-and-project-management"].id}`}
-            className="link w-1/2"
-          >
-            Read More
-          </Link>
-          {/* {whatWeDo.map((whatWeDo, idx) => (
+        {whatWeDo.map((whatWeDo, idx) => (
+          <Card
+            title={whatWeDo.title}
+            subTitle={whatWeDo.subTitle}
+            description={whatWeDo.description}
+            image={whatWeDo.images[0]}
+            to={`/services/${whatWeDo.id}`}
+          />
+        ))}
+      </section>
+    </Container>
+  );
+};
+
+export default WhatWeDo;
+
+{
+  /* {whatWeDo.map((whatWeDo, idx) => (
             <Card
               key={idx}
               title={whatWeDo.title}
@@ -116,11 +128,5 @@ const WhatWeDo = () => {
               image={whatWeDo.image}
               direction={whatWeDo.flexDirection}
             />
-          ))} */}
-        </div>
-      </section>
-    </Container>
-  );
-};
-
-export default WhatWeDo;
+          ))} */
+}

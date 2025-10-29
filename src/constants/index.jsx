@@ -8,6 +8,28 @@ import {
   imageMentoring,
   imagePolicy,
   imageResearch,
+
+  // what we do
+  research1,
+  research2,
+  research3,
+  research4,
+  policy1,
+  policy2,
+  policy3,
+  policy4,
+  consult1,
+  consult2,
+  consult3,
+  consult4,
+  capacity1,
+  capacity2,
+  capacity3,
+  capacity4,
+  mentor1,
+  mentor2,
+  mentor3,
+  mentor4,
 } from "../assets/assets";
 
 // staff Profiles images
@@ -69,6 +91,7 @@ const services = [
   {
     id: "research-and-project-management",
     title: "Research & Project Management",
+    subTitle: "Transforming Evidence Into Real-World Impact",
     text: "Coordinating high-impact, cross-sector projects that translate science into sustainable action.",
     icon: iconConsult,
     rationale:
@@ -79,6 +102,7 @@ const services = [
   {
     id: "policy-engagement-and-advocacy",
     title: "Policy Engagement & Advocacy",
+    subTitle: "Where Research Meets Policy",
     text: "Turning complex data into actionable policies and stakeholder dialogue.",
     icon: iconManagement,
     rationale:
@@ -707,42 +731,92 @@ const aboutPage = {
 
 const whatWeDo = [
   {
+    id: "research-project-management",
     title: "Research Project Management",
-    subTitle: "Turning Evidence into Action",
+    subTitle: "Transforming Evidence Into Real-World Impact",
     description:
       "We lead and manage high-impact research programs from concept to completion, ensuring scientific rigor, measurable outcomes, and community relevance. Our project management approach aligns with international standards - integrating monitoring, evaluation, and learning frameworks that turn data into decisions and discoveries into sustainable solutions.",
-    image: agric,
+    detailedDescription:
+      "We design, coordinate, and manage high-impact research projects that bridge the gap between laboratories and local communities. Our teams work across agriculture, technology, and environmental sustainability to ensure research outputs lead to measurable change. From project design to execution, monitoring, and knowledge dissemination, we ensure that every initiative meets global standards and delivers tangible results.",
+    images: [research1, research2, research3, research4],
     flexDirection: "",
+
+    focusAreas: [
+      "Public Health & One Health Approach",
+      "Sustainable Agriculture & Environmental Sustainability",
+      "Renewable Energy & Climate Resilience",
+      "Biomedical & Bioscience Integration​",
+    ],
   },
   {
-    title: "Public Health Advocacy:",
+    id: "policy-engagement-communications",
+    title: "Policy Engagement & Communications",
+    subTitle: "Where Research Meets Policy",
     description:
-      "Students are natural communicators. When empowered with accurate health information, they can lead peer education campaigns, organize campus health outreaches, and promote awareness on issues like infectious diseases, hygiene, mental health, and reproductive health. Example: A student-led RAISSAT health club on campus can host awareness days on neglected tropical diseases, emerging infectious diseases, malaria prevention, or mental health.",
-    image: publicHealth,
-    flexDirection: "row-reverse",
+      "We bridge the gap between research and governance by transforming complex data into clear, actionable policies. Through strategic communication, policy briefs, and stakeholder dialogues, RAISSAT ensures that science informs sustainable decision-making. Our policy engagement unit amplifies credible voices, shapes reform, and drives systems-level change across Africa and beyond.",
+    detailedDescription:
+      "We transform scientific data into actionable insights that drive decision-making. RAISSAT’s policy specialists bridge the gap between researchers and policymakers, producing clear, evidence-based recommendations that guide national and regional reforms. Through advocacy, communication strategies, and stakeholder engagement, we make science understandable, usable, and impactful.",
+    images: [policy1, policy2, policy3, policy4],
+    flexDirection: "",
+    focusAreas: [
+      "Policy Translation & Brief Development​",
+      "Government and NGO Collaboration​",
+      "Advocacy Campaigns",
+      "Science Communication​",
+    ],
   },
 
   {
-    title: "Environmental Sustainability:",
+    id: "consulting",
+    title: "Consultancy",
+    subTitle: "Empowering Organizations to Act Responsibly - and Effectively",
     description:
-      "Young people are often the most passionate environmental stewards. Through clubs, projects, and innovation challenges, they can contribute fresh ideas to conservation, recycling, climate action, and wildlife protection. Example: Students can lead campus tree-planting drives, research indigenous biodiversity, or create awareness campaigns around endangered species.",
-    image: sustainability,
+      "RAISSAT provides advisory and consultancy services that help governments, corporations, and institutions adopt sustainable, data-driven strategies. Our experts work at the intersection of policy, technology, and business to deliver ESG-aligned solutions that create long-term value for people and the planet.",
+    detailedDescription:
+      "RAISSAT provides advisory and consultancy services that help governments, corporations, and institutions adopt sustainable, data-driven strategies. Our experts work at the intersection of policy, technology, and business to deliver ESG-aligned solutions that create long-term value for people and the planet.",
+    images: [consult1, consult2, consult3, consult4],
     flexDirection: "",
+    focusAreas: [
+      "ESG and Net Zero Implementation​",
+      "Environmental and Sustainability Audits​",
+      "Climate-Smart Agriculture & Green Technologies",
+      "Data-Driven Impact Assessment",
+    ],
   },
 
   {
-    title: "Research and Innovation:",
+    id: "capacity-building-human-development",
+    title: "Capacity Building & Human Development",
+    subTitle: "Equipping Minds to Shape a Sustainable Tomorrow",
     description:
-      "Universities and polytechnics are research hubs. When the students are getting engaged, RAISSAT taps into a pool of talent eager to explore practical solutions. The students can contribute to data collection, surveys, community-based participatory research, and even co-author publications. Example: RAISSAT will collaborate with academic departments to integrate student-led research into its community projects",
-    image: innovation,
+      "Through targeted training, workshops, and digital learning platforms, we strengthen the capacity of professionals, policymakers, and researchers to drive sustainable innovation. Our programs combine theory and application—bridging knowledge and action to equip the next generation of changemakers.",
+    detailedDescription:
+      "RAISSAT believes that lasting transformation begins with people. We deliver high-quality training programs, professional workshops, and mentorship designed to strengthen research skills, leadership capacity, and sustainability knowledge. Our hybrid learning model—spanning physical and digital platforms—ensures accessibility for learners worldwide.",
+    images: [capacity1, capacity2, capacity3, capacity4],
     flexDirection: "row-reverse",
+    focusAreas: [
+      "Research & Innovation Training",
+      "Science Communication & Leadership",
+      "Technical Skills for Sustainability",
+      "Digital Learning and Knowledge Transfer",
+    ],
   },
   {
-    title: "Technology for Social Impact:",
+    id: "youth-mentorship-community-engagement",
+    title: "Youth Mentorship & Community Engagement",
+    subTitle: "Inspiring the Next Generation of Innovators",
     description:
-      "Tertiary institutions are fertile ground for digital innovation. The students can design mobile apps, build websites, or manage digital campaigns that amplify RAISSAT’s impact and connect underserved communities with resources. Example: A campus tech club could design an app to track water quality or create animated videos for health education in local languages.",
-    image: technology,
+      "We believe the future belongs to those empowered to shape it. Our youth programs engage young people in research, sustainability projects, and leadership development - providing mentorship, tools, and real-world experience to foster confidence, creativity, and community impact.",
+    detailedDescription:
+      "We invest in young people as the architects of a sustainable future. Through mentorship, field experience, and innovation challenges, RAISSAT empowers youth to explore research, entrepreneurship, and social impact. We also work directly with communities to co-create inclusive, science-based solutions that improve livelihoods and strengthen resilience.",
+    images: [mentor1, mentor2, mentor3, mentor4],
     flexDirection: "",
+    focusAreas: [
+      "Youth Leadership & Mentorship",
+      "Community-Based Research",
+      "Inclusive Innovation Programs​",
+      "Local Empowerment Initiatives",
+    ],
   },
 ];
 
