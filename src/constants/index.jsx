@@ -59,10 +59,10 @@ import {
 } from "../assets/assets";
 
 const navItems = [
-  {
-    text: "Home",
-    route: "/",
-  },
+  // {
+  //   text: "Home",
+  //   route: "/",
+  // },
   {
     text: "Who We Are",
     route: "/about",
@@ -84,7 +84,7 @@ const navItems = [
 // For About Section component
 const about = {
   title: "Who We Are",
-  text: "RAISSAT (Research Alliance for Innovation in Science, Agriculture, and Technology) is a global think-and-do alliance transforming evidence into action. We unite scientists, policymakers, innovators, and communities to create lasting change at the intersection of research and real-world impact.",
+  text: "RAISSAT (Research Applied Institute for Sustainability in Science Agriculture and Technology) is a global think-and-do alliance transforming evidence into action. We unite scientists, policymakers, innovators, and communities to create lasting change at the intersection of research and real-world impact.",
 };
 
 const services = [

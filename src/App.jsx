@@ -7,10 +7,12 @@ import WhatWeDo from "./Pages/WhatWeDo";
 import Media from "./Pages/Media";
 import Layout from "./Pages/Layout";
 import ServicePage from "./Pages/ServicePage";
+import ScrollTop from "./Components/ScrollTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollTop />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />

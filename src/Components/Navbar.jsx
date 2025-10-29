@@ -35,7 +35,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="nav flex justify-between items-center bg-bright-gray text-midnight-green font-inter">
+    <nav className="nav flex justify-between items-center bg-bright-gray text-midnight-green font-inter z-9999">
       <Link to="/">
         <img className="hidden min-[990px]:block" src={logo} alt="Logo" />
         <img className="hidden max-[990px]:block" src={logoMd} alt="Logo" />
@@ -57,6 +57,7 @@ const Navbar = () => {
         {navItems.map((item, idx) => (
           <li key={idx} className="">
             <NavLink
+              onClick={handleToggleNav}
               className={"text-[1rem] md:text-[1.1rem]  text-base"}
               to={item.route}
             >

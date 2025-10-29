@@ -9,7 +9,7 @@ const Layout = () => {
       <header>
         <Navbar />
       </header>
-      <main className="pt-16">
+      <main className="pt-16 bg-bright-gray min-h-[calc(100vh-96px)]">
         <Outlet />
       </main>
       <CTA />
