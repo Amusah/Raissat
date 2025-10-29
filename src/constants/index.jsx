@@ -59,10 +59,10 @@ import {
 } from "../assets/assets";
 
 const navItems = [
-  // {
-  //   text: "Home",
-  //   route: "/home",
-  // },
+  {
+    text: "Home",
+    route: "/",
+  },
   {
     text: "Who We Are",
     route: "/about",

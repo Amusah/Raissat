@@ -65,15 +65,15 @@ const Navbar = () => {
           </li>
         ))}
 
-        <li className=" hidden min-[990px]:block">
-          {/* Education btn */}
+        {/* <li className=" hidden min-[990px]:block">
+          Education btn
           <button
             onClick={handleToggleDropdown}
             className="btn w-32 bg-midnight-green"
           >
             Education
           </button>
-        </li>
+        </li> */}
         {/* dropdown link to education route */}
         <li className="hidden max-sm:block">
           <NavLink to="education">Education</NavLink>
@@ -81,12 +81,12 @@ const Navbar = () => {
       </ul>
 
       {/* Education btn */}
-      <button
+      {/* <button
         onClick={handleToggleDropdown}
         className="btn w-32 bg-midnight-green hidden max-[990px]:block max-sm:hidden"
       >
         Education
-      </button>
+      </button> */}
       <img
         onClick={handleToggleNav}
         className={`size-8 block sm:hidden ${toggleNav ? "hidden" : ""}`}
@@ -94,7 +94,7 @@ const Navbar = () => {
         alt="hamburger"
       />
       {/* Dropdown education menu */}
-      {toggleDropDown && (
+      {/* {toggleDropDown && (
         <ul className="flex flex-col justify-center text-base gap-8 p-6 bg-slate-gray-transparent text-bright-gray absolute max-[1025px]:right-8 lg:right-30 top-17 w-[250px] h-[300px] animate-moveInBottom">
           <li>
             <Link>School of Science</Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <Link>Interdisciplinary Studies</Link>
           </li>
         </ul>
-      )}
+      )} */}
     </nav>
   );
 };

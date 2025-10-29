@@ -11,6 +11,7 @@ const ServicePage = () => {
   // const service = services.find((service) => service.id === serviceId);
 
   const service = whatWeDo.find((service) => service.id === serviceId);
+  console.log(service)
 
   const handleNavigate = () => {
     if (window.history.length > 1) {
@@ -28,13 +29,20 @@ const ServicePage = () => {
     <Container>
       <section className="min-h-screen flex flex-col py-8">
         <div className="py-20 flex flex-col min-[89px]:flex-row gap-10 justify-center">
-          <img src={service.images[0]} alt="service-image" loading="eager" />
-          <div className="font-inter">
+          <div className="w-full md:w-[50%] h-80  overflow-hidden">
+            <img
+              className="h-full w-full object-cover"
+              src={service.images[0]}
+              alt="service-image"
+              loading="eager"
+            />
+          </div>
+          <div className="font-inter w-full md:w-[50%]">
             <h1 className="font-semibold text-2xl mb-4">{service.title}</h1>
-            <p className="mb-5">{service.text}</p>
+            <p className="font-bold p mt-4">{service.subTitle}</p>
             <span className="font-semibold flex flex-col gap-2">
-              <h2>Why it Stands out:</h2>
-              <p className="font-normal">{'service.rationale'}</p>
+              {/* <h2>Why it Stands out:</h2> */}
+              <p className="font-normal">{service.detailedDescription}</p>
             </span>
           </div>
         </div>
@@ -43,7 +51,7 @@ const ServicePage = () => {
           <img
             onClick={handleNavigate}
             className="size-10 "
-            // src={iconBack}
+            src={iconBack}
             alt="Go back button"
           />
         </span>
