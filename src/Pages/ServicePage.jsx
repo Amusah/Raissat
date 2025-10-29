@@ -28,7 +28,7 @@ const ServicePage = () => {
   return (
     <Container>
       <section className="min-h-screen flex flex-col py-8">
-        <div className="py-20 flex flex-col min-[89px]:flex-row gap-10 justify-center">
+        <div className="py-20 flex flex-col md:flex-row gap-10 justify-center">
           <div className="w-full md:w-[50%] h-80  overflow-hidden">
             <img
               className="h-full w-full object-cover"
@@ -40,10 +40,14 @@ const ServicePage = () => {
           <div className="font-inter w-full md:w-[50%]">
             <h1 className="font-semibold text-2xl mb-4">{service.title}</h1>
             <p className="font-bold p mt-4">{service.subTitle}</p>
-            <span className="font-semibold flex flex-col gap-2">
-              {/* <h2>Why it Stands out:</h2> */}
-              <p className="font-normal">{service.detailedDescription}</p>
-            </span>
+            <p className="font-normal">{service.detailedDescription}</p>
+            <ul className="">
+              {service.focusAreas.map((area, index) => (
+                <li key={index} className="p mt-2 list-disc list-inside">
+                  {area}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <span className="mx-auto font-inter flex flex-col gap-2 items-center cursor-pointer">
