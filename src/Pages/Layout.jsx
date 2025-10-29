@@ -13,6 +13,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <CTA />
+      {/* <hr className="border-t border-gray-500" /> */}
       <Footer />
     </>
   );

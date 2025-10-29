@@ -1,12 +1,13 @@
 import { aboutPage } from "../../constants";
 // import ImpactPhilosopy from "./ImpactPhilosopy";
+import Container from "../Container";
 
 const { about } = aboutPage;
 
 const AboutFull = () => {
   return (
     <>
-      <section className="px-4 sm:px-8 md:px-15 lg:px-30">
+      <Container className="">
         <div className="py-16">
           <h1 className="h1 mb-4 text-midnight-green">{about.title}</h1>
           <p className="p text-xs sm:text-sm">{about.text}</p>
@@ -47,49 +48,52 @@ const AboutFull = () => {
           </span> }
         </div> */}
         </div>
-      </section>
-      <section className="py-10 px-4 sm:px-8 md:px-15 lg:px-30 bg-rich-black font-inter">
-        <div className="mb-8">
-          <h1 className="mb-5 font-semibold text-xl text-indian-yellow">
-            Our Impact Philosophy
-          </h1>
-          <p className="p leading-6 text-white">
-            At RAISSAT, impact is intentional.
-          </p>
-          <p className="p leading-6 text-white">
-            We measure success not by the number of reports written but by the
-            lives improved, the systems strengthened, and the policies changed.
-          </p>
-
-          <div>
-            <p className="p mb-5 mt-8 text-white">
-              Every project we undertake is built on five core pillars that
-              define our approach:
+      </Container>
+      <section className="py-10 bg-rich-black font-inter">
+        <Container>
+          <div className="mb-8">
+            <h1 className="mb-5 font-semibold text-xl text-indian-yellow">
+              Our Impact Philosophy
+            </h1>
+            <p className="p leading-6 text-white">
+              At RAISSAT, impact is intentional.
             </p>
-            <ol className="p leading-6 text-white space-y-2 list-decimal">
-              <li>
-                <span className="font-bold">Evidence-Based Action - </span>
-                Science that informs and transforms.
-              </li>
-              <li>
-                <span className="font-bold">Collaborative Innovation - </span>
-                Partnerships that amplify reach and relevance.
-              </li>
-              <li>
-                <span className="font-bold">Capacity Development - </span>
-                Building people before programs.
-              </li>
-              <li>
-                <span className="font-bold">Policy Integration - </span>
-                Embedding science into governance.
-              </li>
-              <li>
-                <span className="font-bold">Sustainability First - </span>
-                Ensuring progress lasts beyond projects.
-              </li>
-            </ol>
+            <p className="p leading-6 text-white">
+              We measure success not by the number of reports written but by the
+              lives improved, the systems strengthened, and the policies
+              changed.
+            </p>
+
+            <div>
+              <p className="p mb-5 mt-8 text-white">
+                Every project we undertake is built on five core pillars that
+                define our approach:
+              </p>
+              <ol className="p leading-6 text-white space-y-2 list-decimal">
+                <li>
+                  <span className="font-bold">Evidence-Based Action - </span>
+                  Science that informs and transforms.
+                </li>
+                <li>
+                  <span className="font-bold">Collaborative Innovation - </span>
+                  Partnerships that amplify reach and relevance.
+                </li>
+                <li>
+                  <span className="font-bold">Capacity Development - </span>
+                  Building people before programs.
+                </li>
+                <li>
+                  <span className="font-bold">Policy Integration - </span>
+                  Embedding science into governance.
+                </li>
+                <li>
+                  <span className="font-bold">Sustainability First - </span>
+                  Ensuring progress lasts beyond projects.
+                </li>
+              </ol>
+            </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* <ImpactPhilosopy /> */}
     </>

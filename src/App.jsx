@@ -7,6 +7,7 @@ import WhatWeDo from "./Pages/WhatWeDo";
 import Media from "./Pages/Media";
 import Layout from "./Pages/Layout";
 import ServicePage from "./Pages/ServicePage";
+import Contact from "./Pages/Contact";
 import ScrollTop from "./Components/ScrollTop";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<WhatWeDo />} />
           <Route path="media" element={<Media />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="services/:serviceId" element={<ServicePage />} />
           {/* <Route  */}
         </Route>

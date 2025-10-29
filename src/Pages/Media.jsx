@@ -11,7 +11,7 @@ const Media = () => {
   const [activeTab, setActiveTab] = useState("All");
 
   return (
-    <Container className="lg:!px-20 pb-8">
+    <Container className="pb-8 w-full sm:w-[90%] md:w-[85%] mx-auto">
       <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
       {activeTab === "All" && (
         <>

@@ -59,10 +59,10 @@ import {
 } from "../assets/assets";
 
 const navItems = [
-  // {
-  //   text: "Home",
-  //   route: "/",
-  // },
+  {
+    text: "Home",
+    route: "/",
+  },
   {
     text: "Who We Are",
     route: "/about",
@@ -71,10 +71,10 @@ const navItems = [
     text: "What We Do",
     route: "/services",
   },
-  {
-    text: "Media center",
-    route: "/media",
-  },
+  // {
+  //   text: "Media center",
+  //   route: "/media",
+  // },
   {
     text: "Get Involved",
     route: "/contact",
