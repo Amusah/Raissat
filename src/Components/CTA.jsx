@@ -1,9 +1,13 @@
-import React from "react";
+import { useNavigate } from "react-router";
+import { handleCtaClick } from "../utils";
+
 import { whiteLogoRound } from "../assets/assets";
 
 import Container from "./Container";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-rich-black">
       <Container>
@@ -20,7 +24,7 @@ const CTA = () => {
           <h1 className="p text-indian-yellow text-center font-bold">
             Research should change lives
           </h1>
-          <button className="btn text-xs md:text-sm bg-indian-yellow">
+          <button onClick={() => handleCtaClick(navigate, 'contact')} className="btn text-xs md:text-sm bg-indian-yellow">
             Partner With Us
           </button>
         </div>
