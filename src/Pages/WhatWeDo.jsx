@@ -31,8 +31,8 @@ const Card = ({ title, subTitle, description, image, direction, to }) => {
       </div>
       <div className="w-full md:w-[50%]">
         <h1 className="h1 font-bold">{title}</h1>
-        <p className="font-bold p mt-4">{subTitle}</p>
-        <p className="p mt-2 mb-8">{description}</p>
+        <p className="font-bold p leading-7 mt-4">{subTitle}</p>
+        <p className="p leading-7 mt-2 mb-8">{description}</p>
         <Link to={to} className="link w-1/2">
           Read More
         </Link>
@@ -57,7 +57,7 @@ const WhatWeDo = () => {
           <div className="mb-8 flex flex-col gap-3">
             <h1 className="h1 text-midnight-green">What We Do</h1>
             <p className="p font-semibold">Turning Knowledge Into Impact</p>
-            <p className="p leading-6 mt-4">
+            <p className="p leading-7 mt-4">
               At RAISSAT, we translate research into real-world solutions. We
               believe research should do more than inform, it should transform.
               Through evidence-based innovation, capacity building, and

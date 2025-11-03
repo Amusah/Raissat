@@ -39,8 +39,8 @@ const ServicePage = () => {
           </div>
           <div className="font-inter w-full md:w-[50%]">
             <h1 className="font-semibold text-2xl mb-4">{service.title}</h1>
-            <p className="font-bold p mt-4">{service.subTitle}</p>
-            <p className="font-normal">{service.detailedDescription}</p>
+            <p className="font-bold p leading-7 mt-4">{service.subTitle}</p>
+            <p className="font-normal p leading-7">{service.detailedDescription}</p>
             <ul className="">
               {service.focusAreas.map((area, index) => (
                 <li key={index} className="p mt-2 list-disc list-inside">
