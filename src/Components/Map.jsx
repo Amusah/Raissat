@@ -1,16 +1,30 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import markerIcon from '../assets/marker-icon.png';
 
 const Map = ({ currentView }) => {
   const mapRef = useRef(null); // this holds the map container div
 
+  const defaultIcon = L.icon({
+    iconUrl: markerIcon,
+    iconSize: [30, 41], // size of the icon
+    iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+    popupAnchor: [1, -34], // point from which the popup should open relative to the iconAnchor
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    shadowSize: [41, 41],
+  });
+
+  // const markerIcon = L.Icon.Default.imagePath = '../assets/marker-icon.png'
+  // console.log(L.Icon.Default.imagePath);
+  
   const views = {
     headquarters: [6.59354, 3.36326],
     uk: [52.2355, 0.15192],
   };
 
   useEffect(() => {
+    
     if (!mapRef.current) return;
 
     // Initialize the map
@@ -23,7 +37,7 @@ const Map = ({ currentView }) => {
     }).addTo(map);
 
     // Add a marker example
-    const marker = L.marker(views[currentView]).addTo(map);
+    const marker = L.marker(views[currentView], {icon: defaultIcon}).addTo(map);
     marker
       .bindPopup(
         `${
