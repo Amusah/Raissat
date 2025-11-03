@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="pt-16">
         <h1 className="h1 mb-4 text-midnight-green">Contact Us</h1>
         <p className="p font-bold">Let’s Build Sustainable Futures, Together</p>
-        <p className="p mt-4 text-xs sm:text-sm">
+        <p className="p mt-4 leading-7">
           At RAISSAT, collaboration drives transformation. Whether you’re an
           individual, organization, or institution seeking to partner, support,
           or learn from our work, we’d love to hear from you. Our team of

@@ -39,10 +39,10 @@ const Team = () => {
         <h1 className=" bg-midnight-green rounded-xl text-bright-gray font-bold text-center  md:w-lg mx-auto  py-3">
           Meet the Team
         </h1>
-        <p className="mt-6 p leading-6 font-bold text-center md:text-left">
+        <p className="mt-6 p leading-7 font-bold text-center md:text-left">
           Our Team & Leadership Philosophy
         </p>
-        <p className="mt-6 p leading-6 text-center md:text-left">
+        <p className="mt-6 p leading-7 text-center md:text-left">
           Led by visionary experts across science, business, and public policy,
           for RAISSAT’s leadership it is more than governance, it’s
           collaboration in action. Our executive team brings together diverse
