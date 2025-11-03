@@ -15,7 +15,7 @@ const AboutSummary = () => {
         <h1 className="text-[36px] text-midnight-green font-medium">
           Who We Are
         </h1>
-        <p className="text-center leading-7">
+        <p className="text-center p leading-7">
           RAISSAT (Research Applied Institute for Sustainability in Science
           Agriculture and Technology) is a global think-and-do alliance
           transforming evidence into action. We unite scientists, policymakers,
@@ -26,7 +26,7 @@ const AboutSummary = () => {
         <h1 className="text-[28px] text-midnight-green font-medium">
           Our Mission
         </h1>
-        <p className="text-center leading-7">
+        <p className="text-center p leading-7">
           To turn knowledge into impact by transforming research into real-world
           solutions, building human capacity, and advancing policy across
           science, agriculture, and technology.
@@ -36,7 +36,7 @@ const AboutSummary = () => {
           Our Vision
         </h1>
 
-        <p className="text-center leading-7">
+        <p className="text-center p leading-7">
           A world where science, technology, and integrity unite to secure
           prosperity, nourish communities, and safeguard the planet for
           generations to come.
