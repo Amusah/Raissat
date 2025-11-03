@@ -42,10 +42,10 @@ const Card = ({ title, subTitle, description, image, direction, to }) => {
 };
 
 const WhatWeDo = () => {
-  const serviceObj = Object.fromEntries(
-    services.map((service) => [service.id, service])
-  );
-  console.log(serviceObj);
+  // const serviceObj = Object.fromEntries(
+  //   services.map((service) => [service.id, service])
+  // );
+  // console.log(serviceObj);
   // console.log(serviceObj["consultancy"]);
 
   return (
@@ -104,6 +104,7 @@ const WhatWeDo = () => {
         </div>
         {whatWeDo.map((whatWeDo, idx) => (
           <Card
+          key={idx}
             title={whatWeDo.title}
             subTitle={whatWeDo.subTitle}
             description={whatWeDo.description}

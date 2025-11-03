@@ -3,7 +3,7 @@ import { rightArrow } from '../../assets/assets'
 // import { truncateText } from '../../utils'
 
 const Card = ({name, img, profileSummary, handleToggleModal}) => {
-  console.log(profileSummary)
+  // console.log(profileSummary)
   return (
     <div className="bg-white p-3 rounded-xl shadow-2xl">
       <div className="text-center mb-3">

@@ -10,7 +10,7 @@ const AboutFull = () => {
       <Container className="">
         <div className="py-16">
           <h1 className="h1 mb-4 text-midnight-green">{about.title}</h1>
-          <p className="p text-xs sm:text-sm">{about.text}</p>
+          <div className="p text-xs sm:text-sm">{about.text}</div>
           {/* <div className="flex justify-center text-midnight-green mt-5">
           // card
           <span className="w-max">

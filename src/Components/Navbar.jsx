@@ -7,7 +7,7 @@ import { navItems } from "../constants";
 const Navbar = () => {
   const [toggleNav, setToggleNav] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [toggleDropDown, setToggleDropDown] = useState(false);
+  // const [toggleDropDown, setToggleDropDown] = useState(false);
 
   // check mobile screen size
   useLayoutEffect(() => {
@@ -30,9 +30,9 @@ const Navbar = () => {
     setToggleNav((prev) => !prev);
   }
 
-  function handleToggleDropdown() {
-    setToggleDropDown((prev) => !prev);
-  }
+  // function handleToggleDropdown() {
+  //   setToggleDropDown((prev) => !prev);
+  // }
 
   return (
     <nav className="nav flex justify-between items-center bg-bright-gray text-midnight-green font-inter z-9999">
@@ -76,9 +76,9 @@ const Navbar = () => {
           </button>
         </li> */}
         {/* dropdown link to education route */}
-        <li className="hidden max-sm:block">
+        {/* <li className="hidden max-sm:block">
           <NavLink to="education">Education</NavLink>
-        </li>
+        </li> */}
       </ul>
 
       {/* Education btn */}

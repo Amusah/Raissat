@@ -76,7 +76,7 @@ const navItems = [
   //   route: "/media",
   // },
   {
-    text: "Get Involved",
+    text: (<button className="bg-indian-yellow text-white py-2 px-4 rounded-2xl cursor-pointer">Get Involved</button>),
     route: "/contact",
   },
 ];
@@ -176,19 +176,18 @@ const faqs = [
   {
     question: "What is RAISSAT?",
     answer:
-      "RAISSAT (Research Alliance for Innovation in Science, Agriculture, and Technology) is a multidisciplinary research and policy organization dedicated to transforming evidence into impact. We bridge science, agriculture, and technology to create sustainable solutions that improve lives and protect the planet.",
+      "RAISSAT (Research Applied Institute for Sustainability in Science, Agriculture and Technology) is a multidisciplinary research and policy organization dedicated to transforming evidence into impact. We bridge science, agriculture, and technology to create sustainable solutions that improve lives and protect the planet.",
   },
 
   {
     question: "What does RAISSAT stand for?",
     answer:
-      "RAISSAT stands for Research Alliance for Innovation in Science, Agriculture, and Technology—a name that reflects our purpose: connecting research, innovation, and policy to shape sustainable futures.",
+      "RAISSAT stands for Research Applied Institute for Sustainability in Science, Agriculture and Technology — a name that reflects our purpose: connecting research, innovation, and policy to shape sustainable futures.",
   },
 
   {
     question: "What is RAISSAT’s Massive Transformative Purpose (MTP)?",
-    answer:
-      "“From evidence to impact. Breaking barriers and shaping sustainable futures.” Our MTP drives everything we do—translating research into real-world transformation through collaboration and innovation.",
+    answer: "From evidence to impact. Breaking barriers and shaping sustainable futures.” Our MTP drives everything we do—translating research into real-world transformation through collaboration and innovation.",
   },
 
   {

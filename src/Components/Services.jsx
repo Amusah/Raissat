@@ -66,7 +66,7 @@ const Services = () => {
         </div>
 
         <button
-          onClick={() => navigate("services")}
+          onClick={() => navigate("contact")}
           className="btn bg-indian-yellow mt-15"
           >
           Partner With Us
